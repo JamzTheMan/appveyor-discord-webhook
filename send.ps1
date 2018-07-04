@@ -82,7 +82,7 @@ $WEBHOOK_DATA="{
       }
     ],
     ""footer"": {
-        ""text"": ""_$env:APPVEYOR_BUILD_WORKER_IMAGE_""
+        ""text"": ""Image: $env:APPVEYOR_BUILD_WORKER_IMAGE""
       },
     ""timestamp"": ""$TIMESTAMP""
   } ]
