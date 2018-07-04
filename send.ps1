@@ -79,6 +79,11 @@ $WEBHOOK_DATA="{
         ""name"": ""Branch/Tag"",
         ""value"": ""[``$env:APPVEYOR_REPO_BRANCH``](https://github.com/$env:APPVEYOR_REPO_NAME/tree/$env:APPVEYOR_REPO_BRANCH)"",
         ""inline"": true
+      },
+      {
+        ""name"": ""Build Image"",
+        ""value"": ""``$env:APPVEYOR_BUILD_WORKER_IMAGE``"",
+        ""inline"": true
       }
     ],
     ""timestamp"": ""$TIMESTAMP""
