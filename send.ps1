@@ -1,6 +1,8 @@
 # Author: Sankarsan Kampa (a.k.a. k3rn31p4nic)
 # License: MIT
 
+Set-PSDebug -Trace 1
+
 $STATUS=$args[0]
 $WEBHOOK_URL=$args[1]
 
