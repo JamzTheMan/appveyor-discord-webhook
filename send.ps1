@@ -1,8 +1,6 @@
 # Author: Sankarsan Kampa (a.k.a. k3rn31p4nic)
 # License: MIT
 
-Set-PSDebug -Trace 1
-
 $STATUS=$args[0]
 $WEBHOOK_URL=$args[1]
 
@@ -80,6 +78,11 @@ $WEBHOOK_DATA="{
       {
         ""name"": ""Branch/Tag"",
         ""value"": ""[``$env:APPVEYOR_REPO_BRANCH``](https://github.com/$env:APPVEYOR_REPO_NAME/tree/$env:APPVEYOR_REPO_BRANCH)"",
+        ""inline"": true
+      },
+      {
+        ""name"": ""Build Image"",
+        ""value"": ""Image: $env:APPVEYOR_BUILD_WORKER_IMAGE"",
         ""inline"": true
       }
     ],
