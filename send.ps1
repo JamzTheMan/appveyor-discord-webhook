@@ -82,7 +82,7 @@ $WEBHOOK_DATA="{
       },
       {
         ""name"": ""Build Image"",
-        ""value"": ""``$env:APPVEYOR_BUILD_WORKER_IMAGE``"",
+        ""value"": ""Image: $env:APPVEYOR_BUILD_WORKER_IMAGE"",
         ""inline"": true
       }
     ],
