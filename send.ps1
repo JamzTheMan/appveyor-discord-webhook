@@ -62,7 +62,7 @@ $WEBHOOK_DATA="{
   ""embeds"": [ {
     ""color"": $EMBED_COLOR,
     ""author"": {
-      ""name"": ""Job #$env:APPVEYOR_JOB_NUMBER (Build #$env:APPVEYOR_BUILD_NUMBER) $STATUS_MESSAGE - $env:APPVEYOR_REPO_NAME"",
+      ""name"": ""Job #$env:APPVEYOR_JOB_NUMBER (Build #$env:APPVEYOR_BUILD_NUMBER) $STATUS_MESSAGE on $env:APPVEYOR_BUILD_WORKER_IMAGE - $env:APPVEYOR_REPO_NAME"",
       ""url"": ""https://ci.appveyor.com/project/$env:APPVEYOR_ACCOUNT_NAME/$env:APPVEYOR_PROJECT_SLUG/build/$BUILD_VERSION"",
       ""icon_url"": ""$AVATAR""
     },
@@ -78,11 +78,6 @@ $WEBHOOK_DATA="{
       {
         ""name"": ""Branch/Tag"",
         ""value"": ""[``$env:APPVEYOR_REPO_BRANCH``](https://github.com/$env:APPVEYOR_REPO_NAME/tree/$env:APPVEYOR_REPO_BRANCH)"",
-        ""inline"": true
-      },
-      {
-        ""name"": ""Build Image"",
-        ""value"": ""Image: $env:APPVEYOR_BUILD_WORKER_IMAGE"",
         ""inline"": true
       }
     ],
