@@ -15,7 +15,8 @@ status.
 
 ## Guide
 1.  Create a webhook in your Discord Server ([Guide](https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks)).
-
+    [More Info](https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html)
+    
 1.  Copy the **Webhook URL**.
 
 1.  Go to your project settings (for which you want status notifications)
